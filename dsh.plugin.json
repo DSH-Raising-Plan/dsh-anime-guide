@@ -1,0 +1,9 @@
+{
+  "name": "dsh-anime-guide",
+  "description": "DeepSeek Harness 番剧插件：新番表 + 番库/Bangumi/MAL + 国内外差异对照",
+  "version": "0.1.0",
+  "entry": {
+    "name": "dsh-anime-guide",
+    "inject": ["tools"]
+  }
+}

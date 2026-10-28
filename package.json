@@ -1,0 +1,47 @@
+{
+  "name": "dsh-anime-guide",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness 番剧插件：yuc 新番表 + 番库/Bangumi/MAL 评分榜，搜索推荐与国内外差异对照",
+  "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "anime", "bangumi", "myanimelist", "yuc", "fankuhub"],
+  "homepage": "https://github.com/DSH-Raising-Plan/dsh-anime-guide#readme",
+  "bugs": { "url": "https://github.com/DSH-Raising-Plan/dsh-anime-guide/issues" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DSH-Raising-Plan/dsh-anime-guide.git"
+  },
+  "author": "canyueY",
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./parse": "./src/parse.js",
+    "./fetch": "./src/fetch.js",
+    "./contrast": "./src/contrast.js",
+    "./recommend": "./src/recommend.js",
+    "./tool-spec": "./src/tool-spec.js"
+  },
+  "files": [
+    "src",
+    "cordis.patch.yml",
+    "dsh.plugin.json",
+    "README.md",
+    "README.zh.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node --test test/**/*.test.mjs",
+    "check": "node --check src/index.js && node --check src/parse.js && node --check src/fetch.js && node --check src/recommend.js && node --check src/contrast.js && node --check src/tool-spec.js"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": ">=0.1.0-rc.7"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-tools": { "optional": true }
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" }
+  }
+}
