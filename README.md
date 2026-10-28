@@ -3,7 +3,7 @@
 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) **番剧**插件：读多源新番表与排行榜，支持搜索、推荐，以及**国内外榜差异对照**。
 
 > 社区插件，与 DeepSeek / 各数据站官方无关。  
-> 英文简版：[README.en.md](./README.en.md)
+> English: [README.en.md](./README.en.md)
 
 ## 为什么需要它
 
